@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>The Nyan Pointer</title>
+	<link href='http://fonts.googleapis.com/css?family=Ultra&v1' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo&v1' rel='stylesheet' type='text/css'>
+	<style type="text/css" media="screen">
+	html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+
+    blockquote, q { quotes: none; }
+    blockquote:before, blockquote:after,
+    q:before, q:after { content: ''; content: none; }
+    ins { background-color: #ff9; color: #000; text-decoration: none; }
+    mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+    del { text-decoration: line-through; }
+    abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+    table { border-collapse: collapse; border-spacing: 0; }
+    hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+    input, select { vertical-align: middle; }
+
+    body { font:13px/1.231 sans-serif; *font-size:small; } 
+    select, input, textarea, button { font:99% sans-serif; }
+    pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+    a:hover, a:active { outline: none; }
+    ul, ol { margin-left: 2em; }
+    ol { list-style-type: decimal; }
+    nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+    small { font-size: 85%; }
+    strong, th { font-weight: bold; }
+    td { vertical-align: top; }
+    
+    /** Actual styles **/
+    
+    #container {
+        width: 700px;
+        margin: 0px auto;
+        padding: 100px 0;
+    }
+    
+    #container header {
+        text-align: center;
+    }
+    
+    #container footer {
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    #container header h1 {
+        font-family: 'Ultra', arial, serif;
+        font-size: 48px;
+        line-height: 60px;
+    }
+    
+    #container header p {
+        font-family: 'Arvo', arial, serif;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    #main {
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    #button a {
+        display: inline-block;
+        padding: 0px 64px;
+        text-align: center;
+        background: #4162a8;
+          border-top: 1px solid #38538c;
+          border-right: 1px solid #1f2d4d;
+          border-bottom: 1px solid #151e33;
+          border-left: 1px solid #1f2d4d;
+          -moz-border-radius: 4px;
+          -webkit-border-radius: 4px;
+          border-radius: 4px;
+          -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111;
+          -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111;
+          box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111;
+          color: #fff;
+          font-family: "helvetica neue", helvetica, arial, sans-serif;
+          font-size: 40px;
+          font-weight: bold;
+          line-height: 1;
+          margin-bottom: 10px;
+          padding: 10px 0 12px 0;
+          text-align: center;
+          text-shadow: 0px -1px 1px #1e2d4d;
+          width: 150px;
+          -webkit-background-clip: padding-box;
+          text-decoration: none;
+    }
+    
+	</style>
+
+</head>
+<body>
+	<div id="container">
+		<header>
+            <h1>The Nyan Cat Pointer</h1>
+            <p>
+                Just drag the button below into your bookmark toolbar and you'll never be without Nyan. Just click to activate on any page!
+            </p>
+		</header>
+
+		<div id="main" role="main">
+		    <div id="button">
+                <a href="javascript:void(function(){var c=1; var imgs=['rhoTL','7FJ5A','jI8xC','pABcB','vzEmk','1Jd48']; setInterval(function() {c = (c + 1) % 6;document.body.style.cursor = 'url(http://i.imgur.com/'+imgs[c]+'.gif), pointer';}, 120);}());">Nyan!</a>
+            </div>
+		</div>
+
+		<footer>
+            <p>This silly thing was made by <a href="http://twitter.com/hailpixel">@hailpixel</a>, <a href="http://twitter.com/simonw">@simonw</a>, and a few others at <a href="http://ep2011.europython.eu/">EuroPython</a>. It has nothing to do with python. </p>
+		</footer>
+	</div>
+</body>
+</html>
